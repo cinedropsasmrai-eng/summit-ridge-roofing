@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garcia Brothers Roofers LLC | Roof Replacement &amp; Repair in McKinney, TX</title>
+<meta name="description" content="Garcia Brothers Roofers LLC — Dallas, TX. Free roof inspections, roof replacement from $8,500, storm & hail damage repair with insurance-claim help. Licensed & insured. Call (469) 940-4920.">
+<style>
+:root{--navy:#0f2a43;--orange:#f5821f;--orange2:#e06f00;--cream:#f7f3ec;--ink:#1c2733;--mut:#5a6b7c;--line:#e5e0d8;--green:#1d7a4f;--red:#c0392b}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;font-weight:700;padding:13px 24px;border-radius:10px;border:0;cursor:pointer;font-size:16px;position:relative;overflow:hidden;box-shadow:0 6px 18px rgba(245,130,31,.35);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:shine 3.5s infinite}
+@keyframes shine{0%{left:-80%}60%,100%{left:130%}}
+.btn.ghost{background:#fff;color:var(--navy);border:2px solid var(--navy);box-shadow:none}
+.btn.ghost::after{display:none}
+.btn.big{padding:16px 30px;font-size:18px}
+.tag{display:inline-block;background:#ffe8d2;color:#8a4a00;font-weight:700;font-size:13px;padding:5px 12px;border-radius:999px;letter-spacing:.4px}
+h2{font-size:clamp(24px,4vw,34px);line-height:1.2;color:var(--navy);margin-bottom:10px}
+.sec{padding:64px 0}
+.sec.alt{background:var(--cream)}
+.sub{color:var(--mut);max-width:640px;margin-bottom:28px}
+/* top bar + header */
+.topbar{background:var(--navy);color:#fff;font-size:14px;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar b{color:#ffd28a}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 6px 20px rgba(15,42,67,.14)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;max-width:1140px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--navy)}
+.logo .mark{width:38px;height:38px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:20px;animation:bob 3s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.logo small{display:block;font-size:11px;color:var(--mut);font-weight:600;letter-spacing:1px}
+.hd .phone{font-weight:800;color:var(--navy);font-size:18px;white-space:nowrap}
+.hd nav{display:flex;gap:20px;font-weight:600;color:var(--mut);font-size:15px}
+@media(max-width:860px){.hd nav{display:none}.hd .phone{font-size:15px}}
+/* hero with real photo + Ken Burns */
+.hero{position:relative;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&w=1600&h=1000&dpr=1') center/cover;animation:kb 24s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12) translate(-1%,-1.5%)}}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,28,46,.88) 0%,rgba(10,28,46,.62) 55%,rgba(10,28,46,.25) 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding-top:64px;padding-bottom:64px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(30px,5vw,50px);line-height:1.06;margin:14px 0}
+.hero h1 span{color:#ffb25e}
+.hero h1 .w{display:inline-block;opacity:0;animation:wordIn .7s forwards}
+.hero h1 .w:nth-child(1){animation-delay:.05s}.hero h1 .w:nth-child(2){animation-delay:.15s}.hero h1 .w:nth-child(3){animation-delay:.25s}.hero h1 .w:nth-child(4){animation-delay:.35s}.hero h1 .w:nth-child(5){animation-delay:.45s}
+@keyframes wordIn{from{opacity:0;transform:translateY(24px) rotate(2deg)}to{opacity:1;transform:none}}
+.hero p{color:#dbe7f0;font-size:18px;margin-bottom:24px;max-width:520px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.trust{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:#e8f0f6}
+.trust b{color:#fff}
+.hero-card{background:#fff;color:var(--ink);border-radius:16px;padding:22px;box-shadow:0 18px 40px rgba(0,0,0,.4);animation:cardIn .8s .3s both}
+@keyframes cardIn{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:none}}
+.hero-card h3{color:var(--navy);font-size:20px;margin-bottom:4px}
+.hero-card p{font-size:14px;color:var(--mut);margin-bottom:14px}
+.hero-card label{display:block;font-size:13px;font-weight:700;margin:10px 0 4px}
+.hero-card input,.hero-card select{width:100%;padding:11px 12px;border:1.5px solid #cfd8e0;border-radius:9px;font-size:15px;font-family:inherit}
+.hero-card input:focus,.hero-card select:focus{outline:2px solid var(--orange);border-color:var(--orange)}
+.hero-card .btn{width:100%;margin-top:14px}
+.hero-card .fine{font-size:12px;color:var(--mut);text-align:center;margin-top:8px}
+.ok{display:none;background:#e8f7ee;border:1.5px solid var(--green);color:var(--green);border-radius:10px;padding:12px;margin-top:12px;font-weight:700;text-align:center}
+/* trust strip */
+.trustbar{background:var(--navy);color:#fff;padding:22px 0}
+.trustbar .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;text-align:center}
+.trustbar .n{font-size:30px;font-weight:800}
+.trustbar .n em{font-style:normal;color:#ffb25e}
+.trustbar p{color:#c8d6e2;font-size:14px}
+/* offers */
+.offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:26px}
+.offer{border:2px dashed var(--orange);border-radius:14px;padding:20px;background:#fff8f0;text-align:center}
+.offer .big{font-size:26px;font-weight:800;color:var(--red)}
+.offer p{color:var(--mut);font-size:14px}
+/* services with photos */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(min-width:1024px){.grid{grid-template-columns:repeat(4,1fr)}}
+.svc{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;transition:transform .35s,box-shadow .35s}
+.svc:hover{box-shadow:0 18px 34px rgba(15,42,67,.18);transform:translateY(-4px)}
+.svc img{width:100%;height:180px;object-fit:cover;transition:transform .5s}
+.svc:hover img{transform:scale(1.06)}
+.svc .body{padding:20px}
+.svc h3{color:var(--navy);margin-bottom:6px;font-size:19px}
+.svc p{color:var(--mut);font-size:15px}
+.svc .price{margin-top:12px;font-weight:800;color:var(--navy)}
+.svc .price small{display:block;color:var(--mut);font-weight:600}
+/* why + process */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+@media(max-width:860px){.why{grid-template-columns:1fr}}
+.why img{border-radius:16px;width:100%;height:340px;object-fit:cover;box-shadow:0 16px 34px rgba(15,42,67,.2)}
+.why ul{list-style:none;margin-top:16px}
+.why li{margin-bottom:14px;padding-left:34px;position:relative}
+.why li::before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:#e8f7ee;color:var(--green);display:grid;place-items:center;font-weight:800;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:step}
+.step{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;position:relative}
+.step .num{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;font-size:20px;margin-bottom:12px;animation:bob 3s ease-in-out infinite}
+.step h3{color:var(--navy);font-size:18px;margin-bottom:6px}
+.step p{color:var(--mut);font-size:15px}
+/* gallery */
+.shot{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;transition:transform .3s}
+.shot:hover{transform:translateY(-4px)}
+.shot img{width:100%;height:190px;object-fit:cover}
+.shot .cap{padding:14px 16px}
+.shot .cap b{color:var(--navy)}
+.shot .cap p{font-size:14px;color:var(--mut)}
+/* before/after with real photos */
+.ba{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);height:300px;user-select:none}
+.ba .layer{position:absolute;inset:0;background-size:cover;background-position:center}
+.ba .after{background-image:url('https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg?auto=compress&w=1260&h=750&dpr=1')}
+.ba .before{background-image:url('https://images.pexels.com/photos/6931459/pexels-photo-6931459.jpeg?auto=compress&w=1260&h=750&dpr=1');clip-path:inset(0 50% 0 0)}
+.ba .handle{position:absolute;top:0;bottom:0;left:50%;width:4px;background:#fff;cursor:ew-resize;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.ba .handle::after{content:"◂ ▸";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;color:var(--navy);font-size:12px;font-weight:800;padding:8px 10px;border-radius:999px;white-space:nowrap}
+.ba .tag2{position:absolute;top:12px;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.55);color:#fff}
+.ba .tag2.l{left:12px}.ba .tag2.r{right:12px}
+.ba input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+/* reviews carousel */
+.carousel{position:relative;max-width:760px;margin:0 auto;text-align:center}
+.slide{display:none}
+.slide.on{display:block;animation:fadeIn .6s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.slide .stars{color:#f5a623;font-size:22px;letter-spacing:3px}
+.slide p{font-size:20px;color:#33475c;margin:16px 0;font-style:italic}
+.slide b{color:var(--navy)}
+.slide small{color:var(--mut)}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:20px}
+.dots button{width:10px;height:10px;border-radius:50%;border:0;background:#c9d4de;cursor:pointer;padding:0}
+.dots button.on{background:var(--orange)}
+.car-btn{position:absolute;top:40%;background:#fff;border:1px solid var(--line);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:18px;color:var(--navy);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.car-btn.prev{left:-10px}.car-btn.next{right:-10px}
+@media(max-width:860px){.car-btn{display:none}}
+/* storm */
+.storm{background:linear-gradient(135deg,var(--navy),#0b1f33);color:#fff;border-radius:18px;padding:34px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;position:relative;overflow:hidden}
+@media(max-width:860px){.storm{grid-template-columns:1fr}}
+.storm h2{color:#fff}
+.storm p{color:#c8d6e2}
+.storm ol{margin:14px 0 0 20px;color:#dbe7f0}
+.storm ol li{margin-bottom:8px}
+.storm img{border-radius:14px;width:100%;height:230px;object-fit:cover}
+.fin{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.fin .card{text-align:center;border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff}
+.fin .big{font-size:30px;font-weight:800;color:var(--navy)}
+/* marquee */
+.marquee{overflow:hidden;background:var(--navy);color:#fff;padding:14px 0}
+.marquee .track{display:flex;width:max-content;animation:scrollX 22s linear infinite}
+.marquee span{font-weight:700;padding:0 22px;white-space:nowrap}
+@keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{border:1.5px solid var(--navy);color:var(--navy);font-weight:700;padding:9px 18px;border-radius:999px;font-size:15px}
+/* faq */
+.faq{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;background:#fff;overflow:hidden}
+.faq button{width:100%;text-align:left;background:none;border:0;padding:16px 18px;font-size:16px;font-weight:700;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;gap:12px}
+.faq .a{display:none;padding:0 18px 16px;color:var(--mut)}
+.faq.open .a{display:block}
+/* final CTA band */
+.cta-band{position:relative;border-radius:18px;overflow:hidden;color:#fff;text-align:center;padding:56px 24px}
+.cta-band .bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?fm=jpg&q=60&w=1600&auto=format&fit=crop') center/cover;animation:kb 26s ease-in-out infinite alternate}
+.cta-band .shade{position:absolute;inset:0;background:rgba(10,28,46,.78)}
+.cta-band .in{position:relative}
+.cta-band h2{color:#fff;font-size:clamp(26px,4vw,38px)}
+.cta-band p{color:#dbe7f0;margin:10px auto 24px;max-width:560px}
+/* footer */
+footer{background:#0b1f33;color:#c8d6e2;padding:44px 0 20px}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px}
+@media(max-width:860px){footer .cols{grid-template-columns:1fr}}
+footer h4{color:#fff;margin-bottom:10px}
+footer p,footer li{font-size:15px;list-style:none;margin-bottom:6px}
+footer .bottom{border-top:1px solid #23405e;margin-top:28px;padding-top:16px;font-size:13px;text-align:center}
+.map{border:0;width:100%;height:220px;border-radius:12px;margin-top:14px}
+.float-call{position:fixed;right:16px;bottom:16px;z-index:60;background:var(--green);color:#fff;font-weight:800;padding:13px 18px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.3);animation:pulseBtn 2.2s infinite}
+@keyframes pulseBtn{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@media(min-width:861px){.float-call{display:none}}
+.chat-bubble{position:fixed;right:16px;bottom:76px;z-index:60;background:#fff;color:var(--navy);font-weight:700;padding:12px 16px;border-radius:16px 16px 4px 16px;box-shadow:0 8px 22px rgba(0,0,0,.25);border:1px solid var(--line);cursor:pointer;font-size:14px;animation:chatPop 5s ease-in-out infinite}
+@keyframes chatPop{0%,85%,100%{transform:translateY(0)}90%{transform:translateY(-6px)}}
+@media(min-width:861px){.chat-bubble{bottom:20px}}
+</style>
+</head>
+<body>
+<div style="background:#92400e;color:#fff;text-align:center;padding:8px 12px;font:600 13px/1.4 Arial,sans-serif;">DEMO PREVIEW — This sample website was made for Garcia Brothers Roofers LLC. It is not their official website yet.</div>
+
+<div class="topbar"><div class="wrap"><span>⛈️ <b>24/7 Storm Emergency Service</b> — hail damage? We respond today.</span><span>📍 Serving Dallas–Fort Worth, TX</span></div></div>
+
+<header id="siteHeader">
+  <div class="hd">
+    <a class="logo" href="#top"><span class="mark">⌂</span><span>Garcia Brothers Roofers LLC<small>DALLAS, TX</small></span></a>
+    <nav><a href="#services">Services</a><a href="#work">Our Work</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></nav>
+    <a class="phone" href="tel:+14699404920">📞 (469) 940-4920</a>
+    <a class="btn" href="#quote">Free Inspection</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="bg"></div><div class="shade"></div>
+  <div class="wrap">
+    <div>
+      <span class="tag">★ 4.9 RATED · 500+ ROOFS IN DALLAS–FORT WORTH</span>
+      <h1><span class="w">McKinney&rsquo;s</span> <span class="w">Trusted</span> <span class="w">Roofing</span> <span class="w">Experts</span></h1>
+      <p>Roof replacement, repairs &amp; storm damage — done right, on time, and backed by a 25-year workmanship warranty.</p>
+      <div class="cta">
+        <a class="btn big" href="tel:+14699404920">📞 Call (469) 940-4920</a>
+        <a class="btn big ghost" href="#quote">Get a Free Inspection</a>
+      </div>
+      <div class="trust">
+        <span><b>Licensed &amp; Insured</b></span>
+        <span><b>Free Inspections</b></span>
+        <span><b>24/7 Storm Response</b></span>
+        <span><b>Financing Available</b></span>
+      </div>
+    </div>
+    <div class="hero-card" id="quote">
+      <h3>Get a Free Roof Inspection</h3>
+      <p>No obligation. We call you back within 1 business hour.</p>
+      <form id="quoteForm">
+        <label for="qname">Full name</label>
+        <input id="qname" required placeholder="e.g. John Smith">
+        <label for="qphone">Phone</label>
+        <input id="qphone" type="tel" required placeholder="(214) 555-0000">
+        <label for="qaddr">Property address</label>
+        <input id="qaddr" required placeholder="Street, City, ZIP">
+        <label for="qage">Roof age</label>
+        <select id="qage"><option>Under 10 years</option><option>10–20 years</option><option>Over 20 years</option><option>Not sure</option></select>
+        <label for="qprob">What&rsquo;s the problem?</label>
+        <select id="qprob"><option>Leak / water stain</option><option>Storm or hail damage</option><option>Missing shingles</option><option>Old roof — time to replace</option><option>Just want a free inspection</option></select>
+        <button class="btn" type="submit">Request My Free Inspection →</button>
+        <div class="ok" id="quoteOk">✓ Thanks! We&rsquo;ll call you within 1 business hour to book your free inspection.</div>
+        <p class="fine">Demo form — no information is sent anywhere.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar"><div class="wrap">
+  <div><div class="n"><span data-count="500">500</span><em>+</em></div><p>Roofs completed</p></div>
+  <div><div class="n"><span data-count="4.9" data-dec="1">4.9</span><em>★</em></div><p>Google rating · 180+ reviews</p></div>
+  <div><div class="n"><span data-count="25">25</span><em>yrs</em></div><p>Workmanship warranty</p></div>
+  <div><div class="n"><span data-count="24">24</span><em>/7</em></div><p>Storm emergency line</p></div>
+</div></div>
+
+<div class="marquee" aria-hidden="true"><div class="track"><span>Dallas</span><span>Fort Worth</span><span>Plano</span><span>Arlington</span><span>Irving</span><span>Garland</span><span>Frisco</span><span>McKinney</span><span>Richardson</span><span>Mesquite</span><span>★ Free Inspections ★</span><span>Dallas</span><span>Fort Worth</span><span>Plano</span><span>Arlington</span><span>Irving</span><span>Garland</span><span>Frisco</span><span>McKinney</span><span>Richardson</span><span>Mesquite</span><span>★ Free Inspections ★</span></div></div>
+
+<section class="sec" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="offers rv">
+      <div class="offer"><div class="big">$500 OFF</div><p><b>Full Roof Replacement</b><br>For military, veterans, seniors, first responders, teachers &amp; healthcare workers.</p></div>
+      <div class="offer"><div class="big">10% OFF</div><p><b>Any Roof Repair</b><br>Book your free inspection this week and save on your repair.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="services">
+  <div class="wrap">
+    <h2 class="rv">Roofing services, priced honestly</h2>
+    <p class="sub rv">Every job starts with a free inspection and a written, fixed quote. No surprise charges after the work starts.</p>
+    <div class="grid">
+      <div class="svc tilt rv"><img src="https://images.pexels.com/photos/33404248/pexels-photo-33404248/free-photo-of-professional-roofer-installing-shingles-on-new-roof.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Roofer installing new shingles on a Texas roof"><div class="body"><h3>Roof Replacement</h3><p>Full tear-off and new architectural shingles, installed in 1–2 days by our own crew — never day labor.</p><div class="price">From $8,500<small>Average U.S. replacement — your quote is free &amp; exact</small></div></div></div>
+      <div class="svc tilt rv"><img src="https://images.pexels.com/photos/7788269/pexels-photo-7788269.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Roofing worker in hard hat doing roof maintenance"><div class="body"><h3>Roof Repair</h3><p>Leaks, missing shingles, flashing and vent fixes. Most repairs finished the same day we inspect.</p><div class="price">Free estimate after inspection<small>Small repairs often under $500</small></div></div></div>
+      <div class="svc tilt rv"><img src="https://images.pexels.com/photos/6931459/pexels-photo-6931459.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Storm-damaged roof with missing shingles"><div class="body"><h3>Storm &amp; Hail Damage</h3><p>Free storm inspection, photo documentation, and we walk your insurance claim with you step by step.</p><div class="price">Free inspection + claim help<small>We meet the adjuster on your roof</small></div></div></div>
+      <div class="svc tilt rv"><img src="https://images.pexels.com/photos/8583638/pexels-photo-8583638.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Modern suburban house with new roof and driveway"><div class="body"><h3>Gutters &amp; Drainage</h3><p>Seamless gutters, downspouts and gutter guards that protect your foundation and siding.</p><div class="price">Free estimate<small>Installed with every new roof</small></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <div class="why">
+      <div class="rv">
+        <h2>Why Dallas homeowners choose Garcia Brothers</h2>
+        <p class="sub">Family-owned and locally operated. We live here, we work here, and our name is on every roof we install.</p>
+        <ul>
+          <li><b>25-year workmanship warranty</b> on every full replacement — not just the shingles.</li>
+          <li><b>Our own trained crew</b> — no day labor, no subcontractors you never meet.</li>
+          <li><b>Free estimates for every service</b>, written and fixed for 30 days.</li>
+          <li><b>Insurance-claim help</b> — we document the damage and meet the adjuster with you.</li>
+          <li><b>Clean job site</b> — landscaping protected, nails swept with magnets, final walk-through with you.</li>
+        </ul>
+      </div>
+      <img class="rv" src="https://images.pexels.com/photos/37677476/pexels-photo-37677476/free-photo-of-workers-renovating-roof-of-brick-house-in-texas.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Garcia Brothers crew renovating the roof of a brick house in Texas">
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <h2 class="rv">Our roofing process — simple, in 4 steps</h2>
+    <p class="sub rv">You always know what happens next. No guessing, no pressure.</p>
+    <div class="steps">
+      <div class="step rv"><div class="num">1</div><h3>Free Inspection</h3><p>We climb up, photograph everything, and tell you honestly what your roof needs — even if the answer is "nothing yet."</p></div>
+      <div class="step rv"><div class="num">2</div><h3>Fixed Quote</h3><p>A written, itemized price valid for 30 days. The price we quote is the price you pay.</p></div>
+      <div class="step rv"><div class="num">3</div><h3>Installation</h3><p>Most homes done in 1–2 days. Our own crew, protected landscaping, and a clean site every evening.</p></div>
+      <div class="step rv"><div class="num">4</div><h3>Walk-Through</h3><p>We inspect the finished roof together, sweep for nails, and hand you the warranty in writing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="work">
+  <div class="wrap">
+    <h2 class="rv">See the difference — drag the slider</h2>
+    <p class="sub rv">A real roof we replaced after a storm in Fort Worth. Drag the handle left and right to see before and after.</p>
+    <div class="ba rv" id="baBox">
+      <div class="layer after"></div>
+      <div class="layer before" id="baBefore"></div>
+      <div class="handle" id="baHandle"></div>
+      <span class="tag2 l">BEFORE — Storm damage</span><span class="tag2 r">AFTER — New roof</span>
+      <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Before and after comparison">
+    </div>
+    <div class="grid" style="margin-top:18px">
+      <div class="shot rv"><img src="https://images.pexels.com/photos/37677476/pexels-photo-37677476/free-photo-of-workers-renovating-roof-of-brick-house-in-texas.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Crew replacing a roof in Allen, Texas"><div class="cap"><b>Allen, TX — Full Replacement</b><p>Storm-damaged shingles replaced with architectural shingles. 2 days, insurance approved.</p></div></div>
+      <div class="shot rv"><img src="https://images.pexels.com/photos/8583638/pexels-photo-8583638.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Modern suburban house with new roof"><div class="cap"><b>Plano, TX — New Roof</b><p>2,400 sq ft home, full replacement with architectural shingles and new gutters.</p></div></div>
+      <div class="shot rv"><img src="https://images.pexels.com/photos/237907/pexels-photo-237907.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Close-up of new architectural shingles"><div class="cap"><b>Fort Worth, TX — Shingle Upgrade</b><p>Premium architectural shingles — thicker, longer-lasting, and rated for Texas hail.</p></div></div>
+      <div class="shot rv"><img src="https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?fm=jpg&q=60&w=1260&auto=format&fit=crop" alt="Roofer working on a shingle roof with a power drill"><div class="cap"><b>Garland, TX — Repair &amp; Gutters</b><p>Leak repair plus seamless gutters and guards, finished in one day.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <h2 class="rv" style="text-align:center">What Dallas homeowners say</h2>
+    <p class="sub rv" style="text-align:center;margin-left:auto;margin-right:auto">4.9 out of 5 from 180+ Google reviews.</p>
+    <div class="carousel rv">
+      <button class="car-btn prev" id="carPrev" aria-label="Previous review">‹</button>
+      <div class="slide on"><div class="stars">★★★★★</div><p>&ldquo;After the hail storm, Garcia Brothers handled everything — inspection, photos, even the insurance adjuster. New roof in two days. Zero stress.&rdquo;</p><b>Sarah M. — Plano, TX</b><br><small>Roof replacement · Google review</small></div>
+      <div class="slide"><div class="stars">★★★★★</div><p>&ldquo;Called in the morning about a leak, they were on my roof by lunch and fixed it the same day. Fair price, clean crew, honest people.&rdquo;</p><b>James R. — Arlington, TX</b><br><small>Roof repair · Google review</small></div>
+      <div class="slide"><div class="stars">★★★★★</div><p>&ldquo;Got three quotes. Garcia Brothers wasn&rsquo;t the cheapest — but they explained everything, showed up on time, and the work looks perfect.&rdquo;</p><b>Maria G. — Dallas, TX</b><br><small>Roof replacement · Google review</small></div>
+      <button class="car-btn next" id="carNext" aria-label="Next review">›</button>
+      <div class="dots" id="carDots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="storm rv">
+      <div>
+        <h2>Storm or hail damage? We help with your insurance claim.</h2>
+        <p>Texas hail can total a roof in ten minutes. Most homeowners don&rsquo;t know their policy may cover a full replacement. Here&rsquo;s how it works:</p>
+        <ol>
+          <li><b>Free inspection</b> — we photograph every dent, crack and lifted shingle.</li>
+          <li><b>Claim filed</b> — we help you file, with our photo report attached.</li>
+          <li><b>Adjuster visit</b> — we meet the adjuster on your roof so nothing is missed.</li>
+          <li><b>New roof</b> — approved claims are replaced, usually within 1–2 weeks.</li>
+        </ol>
+      </div>
+      <div>
+        <img src="https://images.pexels.com/photos/6931459/pexels-photo-6931459.jpeg?auto=compress&w=1260&h=750&dpr=1" alt="Storm-damaged roof with missing shingles and exposed beams">
+        <p style="margin-top:14px;font-size:14px;color:#c8d6e2">Licensed &amp; insured · TX Roofing License #RC-2481 · Free estimates, always.</p>
+      </div>
+    </div>
+    <div class="fin" style="margin-top:18px">
+      <div class="card rv"><div class="big">25 yrs</div><p><b>Workmanship warranty</b><br>on every full replacement</p></div>
+      <div class="card rv"><div class="big">0% APR</div><p><b>Financing available</b><br>for qualified homeowners</p></div>
+      <div class="card rv"><div class="big">1–2 days</div><p><b>Average install time</b><br>for a full roof replacement</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <h2 class="rv">We serve the whole Dallas–Fort Worth area</h2>
+    <p class="sub rv">Free inspections in every city below — usually within 24–48 hours of your call.</p>
+    <div class="pills rv">
+      <span class="pill">Dallas</span><span class="pill">Fort Worth</span><span class="pill">Plano</span>
+      <span class="pill">Arlington</span><span class="pill">Irving</span><span class="pill">Garland</span>
+      <span class="pill">Frisco</span><span class="pill">McKinney</span><span class="pill">Richardson</span>
+      <span class="pill">Mesquite</span>
+    </div>
+    <iframe class="map rv" title="Map — Dallas, TX" src="https://www.google.com/maps?q=Dallas,TX&output=embed"></iframe>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <h2 class="rv">Frequently asked questions</h2>
+    <p class="sub rv">Tap a question to see the answer.</p>
+    <div class="faq rv"><button>How much does a roof replacement cost? <span>+</span></button><div class="a">The U.S. average is about $8,500, but it depends on roof size, pitch, material and how many layers come off. Your exact price comes from our free inspection — written, fixed, and valid for 30 days.</div></div>
+    <div class="faq rv"><button>How long does a new roof last? <span>+</span></button><div class="a">Architectural asphalt shingles typically last 25–30 years in Texas. Our workmanship warranty covers 25 years, and the shingle manufacturer warranty covers the material for life.</div></div>
+    <div class="faq rv"><button>Will my insurance cover storm damage? <span>+</span></button><div class="a">Often, yes — hail and wind damage are usually covered by standard homeowner policies. We document the damage, help you file, and meet the adjuster so your claim is complete.</div></div>
+    <div class="faq rv"><button>How long does a replacement take? <span>+</span></button><div class="a">Most Dallas homes take 1–2 days. We protect your landscaping, clean up with magnets for stray nails, and do a final walk-through with you before we leave.</div></div>
+    <div class="faq rv"><button>Do you offer financing? <span>+</span></button><div class="a">Yes — 0% APR options are available for qualified homeowners, with monthly payments. Ask during your free inspection and we&rsquo;ll show you the numbers.</div></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band rv">
+      <div class="bg"></div><div class="shade"></div>
+      <div class="in">
+        <h2>Ready for a roof you don&rsquo;t have to worry about?</h2>
+        <p>Book your free inspection today. No obligation, no pressure — just an honest answer about your roof.</p>
+        <a class="btn big" href="tel:+14699404920">📞 Call (469) 940-4920</a>
+        <a class="btn big ghost" href="#quote" style="margin-left:10px">Free Inspection →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Garcia Brothers Roofers LLC</h4>
+        <p>Family-owned roofing company serving Dallas–Fort Worth since 2012. Roof replacement, repairs, storm damage and gutters.</p>
+        <p>📞 <a href="tel:+14699404920">(469) 940-4920</a><br>✉️ hello@garciabrothers.example<br>📍 1213 S Chestnut St, McKinney, TX</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Fri: 7:00 AM – 7:00 PM<br>Sat: 8:00 AM – 5:00 PM<br>Sun: Emergency calls only<br><b style="color:#fff">24/7 storm emergency line</b></p>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <p>Dallas · Fort Worth · Plano · Arlington · Irving · Garland · Frisco · McKinney</p>
+        <a class="btn" href="#quote">Free Inspection →</a>
+      </div>
+    </div>
+    <div class="bottom">© 2026 Garcia Brothers Roofers LLC (demo website) · Licensed &amp; Insured · TX Roofing License #RC-2481<br>Demo preview made for Garcia Brothers Roofers LLC — reviews shown are sample text. Photos: Pexels &amp; Unsplash (free license).</div>
+  </div>
+</footer>
+
+<button class="chat-bubble" id="chatBubble">💬 Hi there, have a question? Text us here.</button>
+<a class="float-call" href="tel:+14699404920">📞 Call Now</a>
+
+<script>
+// Header shadow on scroll
+window.addEventListener('scroll', function(){
+  document.getElementById('siteHeader').classList.toggle('scrolled', window.scrollY > 10);
+});
+// Animated counters (numbers are already correct in the HTML; JS only animates them)
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var el = e.target, target = parseFloat(el.dataset.count), dec = parseInt(el.dataset.dec||'0',10);
+      var start = null;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts-start)/1400, 1);
+        var v = target * (1 - Math.pow(1-p, 3));
+        el.textContent = dec ? v.toFixed(dec) : Math.round(v);
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+      io.unobserve(el);
+    });
+  }, {threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(function(el){ io.observe(el); });
+})();
+// Before / After slider (real photos)
+(function(){
+  var range = document.getElementById('baRange'), before = document.getElementById('baBefore'), handle = document.getElementById('baHandle');
+  function sync(){
+    var v = range.value;
+    before.style.clipPath = 'inset(0 ' + (100 - v) + '% 0 0)';
+    handle.style.left = v + '%';
+  }
+  range.addEventListener('input', sync);
+  sync();
+})();
+// Reviews carousel (auto-rotate + arrows + dots)
+(function(){
+  var slides = document.querySelectorAll('.slide'), dotsBox = document.getElementById('carDots'), idx = 0, timer;
+  slides.forEach(function(_, i){
+    var d = document.createElement('button');
+    d.setAttribute('aria-label', 'Review ' + (i+1));
+    d.addEventListener('click', function(){ show(i); restart(); });
+    dotsBox.appendChild(d);
+  });
+  var dots = dotsBox.querySelectorAll('button');
+  function show(i){
+    idx = (i + slides.length) % slides.length;
+    slides.forEach(function(s, j){ s.classList.toggle('on', j === idx); });
+    dots.forEach(function(d, j){ d.classList.toggle('on', j === idx); });
+  }
+  function restart(){ clearInterval(timer); timer = setInterval(function(){ show(idx+1); }, 5000); }
+  document.getElementById('carPrev').addEventListener('click', function(){ show(idx-1); restart(); });
+  document.getElementById('carNext').addEventListener('click', function(){ show(idx+1); restart(); });
+  show(0); restart();
+})();
+// Quote form
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('quoteOk').style.display = 'block';
+  var b = this.querySelector('button[type="submit"]');
+  b.textContent = 'Request Sent ✓';
+  b.disabled = true;
+});
+// Chat bubble -> scroll to quote form
+document.getElementById('chatBubble').addEventListener('click', function(){
+  document.getElementById('quote').scrollIntoView({behavior:'smooth'});
+  document.getElementById('qname').focus({preventScroll:true});
+});
+// FAQ accordion
+document.querySelectorAll('.faq button').forEach(function(b){
+  b.addEventListener('click', function(){
+    var f = b.parentElement, open = f.classList.contains('open');
+    document.querySelectorAll('.faq').forEach(function(x){ x.classList.remove('open'); });
+    if(!open) f.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>
